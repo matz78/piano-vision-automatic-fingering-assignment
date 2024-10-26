@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Piano Vision Fingering Assignment Tool</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<h1>Piano Vision Fingering Assignment Tool</h1>
+<p>Drag and drop a Piano Vision JSON file into the area below, or click to select a file.</p>
+
+<div class="hand-size-selection">
+    <label>Select Hand Size:</label>
+    <select id="hand-size-select">
+        <option value="XXS">XXS</option>
+        <option value="XS">XS</option>
+        <option value="S">S</option>
+        <option value="M" selected>M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+    </select>
+</div>
+
+<div id="drop-zone">Drag and drop Piano Vision JSON file here, or click to select</div>
+<input type="file" id="file-input" accept=".json">
+
+<a id="download-link" href="#" download="updated_songs.json">Download Updated JSON File</a>
+
+<div id="output"></div>
+
+<p>
+    Based on <a href="https://github.com/marcomusy/pianoplayer">https://github.com/marcomusy/pianoplayer</a>
+</p>
+
+<script src="scripts.js" async></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#drop-zone {
+    width: 100%;
+    padding: 30px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#drop-zone.hover {
+    border-color: #333;
+    color: #333;
+}
+#file-input {
+    display: none;
+}
+#download-link {
+    display: none;
+    margin-top: 20px;
+}
+#output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+}
+h1 {
+    font-size: 24px;
+}
+p {
+    margin-bottom: 20px;
+}
+.hand-size-selection {
+    margin-bottom: 20px;
+}
+.hand-size-selection label {
+    margin-right: 10px;
+}
