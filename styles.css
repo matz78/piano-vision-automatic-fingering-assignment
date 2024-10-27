@@ -1,9 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 30px;
 }
 #drop-zone {
-    width: 100%;
     padding: 30px;
     border: 2px dashed #ccc;
     text-align: center;
@@ -42,4 +41,64 @@ p {
 }
 .hand-size-selection label {
     margin-right: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 30px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p, ul, ol {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #2980b9;
+}
+
+hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Intro Paragraph */
+.intro {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+        margin: 30px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
