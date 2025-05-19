@@ -269,7 +269,12 @@ function processJSON(data, handSize) {
             data.tracksV2[hand].forEach((block) => {
                 if (Array.isArray(block.notes)) {
                     block.notes.forEach((noteData) => {
-                        allNotes.push(new Note(noteData));
+                        var note = new Note(noteData);
+                        if (hand == 'left') {
+                            // play left as a right on a mirrored keyboard
+                            note.x = -note.x;
+                        }
+                        allNotes.push(note);
                     });
                 }
             });
